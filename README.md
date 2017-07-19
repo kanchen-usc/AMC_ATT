@@ -49,6 +49,12 @@ $ cd clickture
 $ python pro_keyword.py
 ```
 
+After processing, the encoded word IDs are stored in ```clickture/img_keyword_ind_clickture_dev_sk_6_sparse.npy``` (Clickture-dev) and ```clickture/img_keyword_ind_clickture_lite_sk_6_sparse.npy``` (Clickture-Lite). Both record files are ```N x 2``` numpy matrices. Each row is in the form of ```[img_id, word_id]```.
+
+### Microsoft COCO Caption keyword dataset
+
+Data and scripts will be released soon
+
 ## Results visualization
 
 The ROC curve and attention map visualization for Clickture dataset is shown below
