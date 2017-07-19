@@ -13,7 +13,7 @@ The framework of AMC is shown below
 
 We propose a novel Attention guided Multi-modal Correlation (AMC) learning method which consists of a jointly learned hierarchy of intra and inter-attention networks. Conditioned on query's intent, intra-attention networks (i.e., visual intra-attention network and language intra-attention network) attend on informative parts within each modality; a multi-modal inter-attention network promotes the importance of the most query-relevant modalities.
 
-## Keyword Dataset
+## Keyword datasets download
 
 To validate the effectiveness of AMC System, we annotated a keyword dataset for [Microsoft Clickture dataset](https://www.microsoft.com/en-us/research/project/clickture/) and [MSCOCO Image Caption dataset](http://mscoco.org/dataset/#captions-challenge2015) using an auto-tagging system for each image. Some of the results are shown below (left and right columns are selected samples from Clickture and MSCOCO caption dataset respectively.)
 
@@ -34,7 +34,20 @@ If you find our dataset useful in your research, please consider citing:
 
 ## Keyword preprocessing
 
-We offer python scripts to process original keywords to word IDs for each training and testing sample.
+We offer python scripts to process original keywords to word IDs for each training and testing sample. To begin, please download zip files from the link provided above; put them in the ```keyword``` folder and unzip them in the same folder. 
+
+We use [sklearn](http://scikit-learn.org/stable/) python library to process keyword files. If you use our scripts, you may need to install ```sklearn``` library first.
+
+### Clickture keyword dataset
+
+```keywords_dev.zip``` and ```keywords_lite.zip``` contain keyword files for Clickture-dev and Clickture-Lite respectively. Each keyword file is a json file named by a unique ID. The mapping of original image file names to unique IDs are stored in ```clickture/img_id_map.pkl``` (Clickture-Lite) and ```clickture/img_id_map_dev.pkl``` (Clickture-dev).
+
+After unzipping the keyword files, you can encode each image's keywords to their word IDs by typing:
+
+```
+$ cd clickture
+$ python pro_keyword.py
+```
 
 ## Results visualization
 
@@ -46,4 +59,4 @@ More details of the experiments are provided in our [paper](https://arxiv.org/ab
 
 ## License
 
-MIT
+[MIT License](https://opensource.org/licenses/MIT)
