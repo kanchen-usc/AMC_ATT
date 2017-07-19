@@ -65,7 +65,7 @@ with open(file_list_lite) as fin:
 					img_keyword_rec.append([img_id, word_id])
 
 img_keyword_rec = np.array(img_keyword_rec).astype('int')
-np.save('img_keyword_rec_clickture_lite_sk_6.npy', img_keyword_rec)
+# np.save('img_keyword_rec_clickture_lite_sk_6.npy', img_keyword_rec)
 gen_compact_range_by_id(img_keyword_rec, np.max(img_keyword_rec[:, 0])+1, 'img_keyword_ind_clickture_lite_sk_6_sparse.npy')
 
 print 'Encoding Dev Set'
@@ -85,5 +85,5 @@ with open(file_list_dev) as fin:
 					img_keyword_rec.append([img_id, word_id])
 
 img_keyword_rec = np.array(img_keyword_rec).astype('int')
-np.save('img_keyword_rec_clickture_dev_sk_6.npy', img_keyword_rec)
+# np.save('img_keyword_rec_clickture_dev_sk_6.npy', img_keyword_rec)
 gen_compact_range_by_id(img_keyword_rec, np.max(img_keyword_rec[:, 0])+1, 'img_keyword_ind_clickture_dev_sk_6_sparse.npy')
