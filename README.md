@@ -36,7 +36,7 @@ If you find our dataset useful in your research, please consider citing:
 
 We offer python scripts to process original keywords to word IDs for each training and testing sample. To begin, please download zip files from the link provided above; put them in the ```keyword``` folder and unzip them in the same folder. 
 
-We use [sklearn](http://scikit-learn.org/stable/) python library to process keyword files. If you use our scripts, you may need to install ```sklearn``` library first.
+We use [sklearn](http://scikit-learn.org/stable/) python library to process keyword files. If you use our scripts, you may need to install ```sklearn``` library.
 
 ### Clickture keyword dataset
 
