@@ -46,14 +46,20 @@ After unzipping the keyword files, you can encode each image's keywords to their
 
 ```
 $ cd clickture
-$ python pro_keyword.py
+$ python pro_keyword_clickture.py
 ```
 
 After processing, the encoded word IDs are stored in ```clickture/img_keyword_ind_clickture_dev_sk_6_sparse.npy``` (Clickture-dev) and ```clickture/img_keyword_ind_clickture_lite_sk_6_sparse.npy``` (Clickture-Lite). Both record files are ```N x 2``` numpy matrices. Each row is in the form of ```[img_id, word_id]```.
 
 ### Microsoft COCO Caption keyword dataset
 
-Data and scripts will be released soon
+After unzipping keyword files in ```keyword/keywords_coco.zip```, you can encode images' keywords to their word IDs by typing:
+```
+$ cd mscoco
+$ python pro_keyword_mscoco.py
+```
+
+After processing, the encoded word IDs are stored in ```mscoco/img_keyword_ind_coco_sk_6.npy```. It is a ```N x 2``` numpy matrix, with each row in the form of ```[img_id, word_id]```.
 
 ## Results visualization
 
