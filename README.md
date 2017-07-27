@@ -26,7 +26,7 @@ If you find our dataset useful in your research, please consider citing:
 ```
 @InProceedings{Chen_2017_CVPR,
 author = {Chen, Kan and Bui, Trung and Fang, Chen and Wang, Zhaowen and Nevatia, Ram},
-title = {AMC: Attention guided Multi-modal Correlation Learning for Image Search},
+title = {{AMC}: Attention guided Multi-modal Correlation Learning for Image Search},
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 year = {2017}
 }
