@@ -21,7 +21,7 @@ To validate the effectiveness of AMC System, we annotated a keyword dataset for 
   <img src='img/dataset.png' width='450'/>
 </p>
 
-The download link for keyword datasets is provided [here](https://www.dropbox.com/sh/g5fojtxuzpw8wo1/AAB9uFZsMsHpBLqw4E9ldgBda?dl=0) (DropBox). 
+The download link for keyword datasets is provided [~~here~~](https://www.dropbox.com/sh/g5fojtxuzpw8wo1/AAB9uFZsMsHpBLqw4E9ldgBda?dl=0) (Previous link is broken, under construction). 
 If you find our dataset useful in your research, please consider citing:
 ```
 @InProceedings{Chen_2017_CVPR,
